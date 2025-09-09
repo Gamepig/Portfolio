@@ -1,0 +1,90 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build files
+dist/
+build/
+
+# Other project directories (we don't want to include them in this Portfolio repo)
+../.cursor/
+../.env.example
+../.taskmaster/
+../AITrading/
+../AI_Prompt_Engineering_Guide/
+../API_Manager/
+../All-Project-Docs/
+../CLAUDE.md
+../Chrome_Extension/
+../ClaudeCodeTest/
+../Crawl4AI/
+../Cursor_MDC_Rules/
+../DATAS/
+../DockerInfo/
+../HyrbridRAG/
+../LightRAG/
+../MCM/
+../MCP-API-Scanner-Refactored/
+../MCP_Servers/
+../NexusERP/
+../NexusGaming/
+../NexusPM/
+../NexusTrade/
+../PM2-GUI-App/
+../PortfolioPage/
+../SillyTavern-Launcher/
+../SuperClaude/
+../TEMP_MEMORY/
+../TaskMaster/
+../TaskMasterAI/
+../TaskMasterTest/
+../TestProject/
+../Wingman/
+../WorkSpace/
+../ai-dev-tasks-main/
+../claude-task-master/
+../memory-bank/
+../pm2-gui/
+../pm2-webui/
