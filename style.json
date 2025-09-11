@@ -1,0 +1,318 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Design system and style guide for Vic Huang Portfolio based on Meyawo template",
+    "framework": "Bootstrap 4",
+    "iconSet": "Themify Icons",
+    "lastUpdated": "2025-09-10"
+  },
+  "layout": {
+    "container": {
+      "type": "Bootstrap container",
+      "maxWidth": "1140px",
+      "responsive": true,
+      "gridSystem": "12-column Bootstrap grid"
+    },
+    "structure": {
+      "navbar": "Fixed top navigation with scroll spy",
+      "sections": "Full-width sections with container content",
+      "footer": "Simple footer with social links and copyright"
+    }
+  },
+  "colors": {
+    "primary": {
+      "description": "Main brand color",
+      "usage": "Buttons, links, primary elements",
+      "variants": ["btn-primary", "text-primary", "bg-primary"]
+    },
+    "secondary": {
+      "description": "Secondary brand color",
+      "usage": "Secondary buttons and elements",
+      "variants": ["btn-secondary", "text-secondary", "bg-secondary"]
+    },
+    "semanticColors": {
+      "success": {
+        "usage": "Success states, confirmation",
+        "classes": ["btn-success", "text-success", "bg-success", "alert-success"]
+      },
+      "danger": {
+        "usage": "Error states, warnings",
+        "classes": ["btn-danger", "text-danger", "bg-danger", "alert-danger"]
+      },
+      "warning": {
+        "usage": "Warning states, caution",
+        "classes": ["btn-warning", "text-warning", "bg-warning", "alert-warning"]
+      },
+      "info": {
+        "usage": "Information, neutral states",
+        "classes": ["btn-info", "text-info", "bg-info", "alert-info"]
+      },
+      "light": {
+        "usage": "Light backgrounds, contrast",
+        "classes": ["btn-light", "text-light", "bg-light"]
+      },
+      "dark": {
+        "usage": "Dark text, backgrounds",
+        "classes": ["btn-dark", "text-dark", "bg-dark"]
+      }
+    },
+    "textColors": {
+      "muted": "text-muted - for secondary text, descriptions",
+      "primary": "text-primary - for primary brand colored text",
+      "danger": "text-danger - for error messages, important warnings"
+    }
+  },
+  "typography": {
+    "headings": {
+      "h1": {
+        "usage": "Main page titles, hero headlines",
+        "examples": ["header-title", "section main titles"]
+      },
+      "h2": {
+        "usage": "Section titles",
+        "class": "section-title",
+        "spacing": "mb-3 (margin-bottom: 1rem)"
+      },
+      "h3": {
+        "usage": "Component section titles",
+        "class": "components-section-title",
+        "weight": "font-weight-normal"
+      },
+      "h5": {
+        "usage": "Card titles, blog titles",
+        "class": "blog-card-title"
+      },
+      "h6": {
+        "usage": "Section subtitles, small headers",
+        "class": "section-title",
+        "spacing": "mb-6, mb-5"
+      }
+    },
+    "specialText": {
+      "sectionSubtitle": {
+        "class": "section-subtitle",
+        "usage": "Subtitle text above main section titles",
+        "examples": ["Who Am I ?", "What I Do ?", "DEMO Projects"]
+      },
+      "headerSubtitle": {
+        "class": "header-subtitle",
+        "usage": "Job title or role description in hero section"
+      },
+      "sectionSecondaryTitle": {
+        "class": "section-secondary-title",
+        "usage": "Secondary headings within components",
+        "spacing": "mt-5, mt-4, mb-2"
+      }
+    },
+    "textUtilities": {
+      "alignment": "text-center for centered content",
+      "weight": "font-weight-normal, font-weight-bold",
+      "transformation": "Based on content requirements"
+    }
+  },
+  "components": {
+    "navigation": {
+      "mainNav": {
+        "class": "custom-navbar",
+        "behavior": "data-spy='affix' data-offset-top='20'",
+        "structure": "Logo + navigation links + hamburger menu",
+        "responsive": "Hamburger menu for mobile"
+      },
+      "breadcrumb": {
+        "class": "breadcrumb",
+        "usage": "Secondary pages navigation",
+        "structure": "Home > Current Page"
+      }
+    },
+    "buttons": {
+      "styles": {
+        "primary": "btn btn-primary - main action buttons",
+        "outline": "btn btn-outline-primary - secondary actions",
+        "rounded": "btn btn-primary rounded - special emphasis",
+        "withIcon": "btn btn-primary rounded with <i> element",
+        "circle": "btn btn-primary circle - icon-only buttons"
+      },
+      "sizes": {
+        "large": "btn-lg",
+        "regular": "default size",
+        "small": "btn-sm",
+        "widthVariants": ["w-sm", "w-md", "w-lg"]
+      },
+      "examples": {
+        "heroButton": "Visit My Works - primary call-to-action",
+        "formSubmit": "Send Message - form submission",
+        "navbarButton": "Components link - navigation action"
+      }
+    },
+    "cards": {
+      "serviceCard": {
+        "class": "service-card",
+        "structure": {
+          "container": "service-card",
+          "body": "body",
+          "icon": "img.icon",
+          "title": "h6.title",
+          "subtitle": "p.subtitle"
+        },
+        "layout": "col-md-6 col-lg-3 grid layout"
+      },
+      "blogCard": {
+        "class": "blog-card",
+        "structure": {
+          "header": "blog-card-header with img.blog-card-img",
+          "body": "blog-card-body",
+          "title": "h5.blog-card-title",
+          "caption": "p.blog-card-caption with meta info",
+          "link": "a.blog-card-link"
+        }
+      }
+    },
+    "forms": {
+      "contactForm": {
+        "class": "contact-form col-md-10 col-lg-8 m-auto",
+        "layout": "form-row with form-group columns",
+        "controls": {
+          "input": "form-control",
+          "textarea": "form-control with rows attribute",
+          "submit": "btn btn-outline-primary rounded"
+        },
+        "grid": "col-sm-6 for name/email, col-sm-12 for textarea/submit"
+      },
+      "formControls": {
+        "sizes": ["form-control-lg", "form-control", "form-control-sm"],
+        "states": ["readonly", "disabled"],
+        "types": ["email", "date", "text", "password"]
+      }
+    },
+    "header": {
+      "hero": {
+        "class": "header",
+        "structure": {
+          "overlay": "overlay div for background effect",
+          "content": "header-content container",
+          "title": "header-title with span.up and span.down",
+          "subtitle": "header-subtitle"
+        }
+      },
+      "mini": {
+        "class": "header header-mini",
+        "usage": "Secondary pages",
+        "structure": "header-title + breadcrumb navigation"
+      }
+    },
+    "sections": {
+      "about": {
+        "structure": {
+          "wrapper": "about",
+          "imageHolder": "about-img-holder with about-img",
+          "caption": "about-caption with content"
+        },
+        "spacing": "section pt-0"
+      },
+      "skills": {
+        "layout": "row with col-md-6 col-lg-3 service cards",
+        "spacing": "section with container text-center"
+      },
+      "works": {
+        "layout": "blog-card components in sequence",
+        "spacing": "section with container text-center"
+      },
+      "contact": {
+        "layout": "contact-form centered",
+        "spacing": "section with container text-center"
+      }
+    },
+    "footer": {
+      "structure": {
+        "copyright": "mb-0 paragraph with dynamic year",
+        "socialLinks": "social-links text-right m-auto ml-sm-auto",
+        "icons": "Themify icons (ti-facebook, ti-twitter-alt, etc.)"
+      }
+    }
+  },
+  "spacing": {
+    "sections": {
+      "default": "section class provides standard section spacing",
+      "modified": "pt-0 for about section (no top padding)",
+      "dividers": "py-5 div for component separation"
+    },
+    "margins": {
+      "small": "mb-3, mt-3",
+      "medium": "mb-5, mt-5, mb-6",
+      "large": "mb-6, mt-6"
+    },
+    "utilities": {
+      "marginAuto": "m-auto, ml-auto, ml-sm-auto",
+      "marginLeft": "ml-3, ml-4, ml-md-3",
+      "marginTop": "mt-1, mt-4, mt-5"
+    }
+  },
+  "responsive": {
+    "grid": {
+      "mobile": "col-sm-* classes",
+      "tablet": "col-md-* classes", 
+      "desktop": "col-lg-* classes"
+    },
+    "navigation": {
+      "hamburger": "hamburger--elastic for mobile menu",
+      "collapse": "navbar-collapse for responsive navigation"
+    },
+    "utilities": {
+      "textAlignment": "text-right on larger screens",
+      "margins": "ml-sm-auto for responsive margins"
+    }
+  },
+  "icons": {
+    "library": "Themify Icons",
+    "usage": {
+      "navigation": "ti-angle-double-right for 'Read more' links",
+      "social": "ti-facebook, ti-twitter-alt, ti-google, ti-pinterest-alt, ti-instagram, ti-rss",
+      "interactions": "ti-heart for likes, ti-comment for comments",
+      "ui": "ti-thumb-up for positive actions"
+    }
+  },
+  "interactive": {
+    "scrollSpy": {
+      "body": "data-spy='scroll' data-target='.navbar' data-offset='40'",
+      "navbar": "data-spy='affix' data-offset-top='20'"
+    },
+    "javascript": {
+      "dependencies": ["jQuery 3.4.1", "Bootstrap Bundle", "Bootstrap Affix"],
+      "custom": "meyawo.js for theme-specific functionality"
+    }
+  },
+  "designPrinciples": {
+    "layout": "Clean, centered content with consistent spacing",
+    "typography": "Clear hierarchy with section subtitles and titles",
+    "colors": "Bootstrap semantic color system with primary brand color",
+    "components": "Card-based design for content sections",
+    "navigation": "Fixed top navigation with smooth scrolling",
+    "responsive": "Mobile-first Bootstrap responsive design",
+    "content": "Text-center alignment for most sections"
+  },
+  "guidelines": {
+    "doUse": [
+      "Bootstrap 4 classes for consistency",
+      "Semantic color classes (primary, success, danger, etc.)",
+      "Responsive grid system (col-sm-*, col-md-*, col-lg-*)",
+      "Standard spacing utilities (mb-3, mt-5, py-5)",
+      "Themify icons for all iconography",
+      "Container > row > col structure for layouts"
+    ],
+    "dontUse": [
+      "Custom CSS colors that break the color system",
+      "Fixed pixel dimensions instead of responsive classes",
+      "Non-semantic HTML structure",
+      "Inconsistent spacing patterns",
+      "Mixed icon libraries"
+    ],
+    "bestPractices": [
+      "Always use container class for content wrapping",
+      "Maintain text-center alignment for section content",
+      "Use section-subtitle + section-title pattern for headers",
+      "Follow the card component structure for content blocks",
+      "Ensure responsive behavior with proper grid classes",
+      "Use semantic HTML elements (nav, section, footer, etc.)"
+    ]
+  }
+}
