@@ -11084,9 +11084,9 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
-  font-weight: 100;
+  font-weight: 400;
   opacity: 1;
-  color: #111;
+  color: #000;
   letter-spacing: .6px;
 }
 
